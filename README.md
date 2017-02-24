@@ -1,6 +1,8 @@
 # Name-Information-Aggregator
 OSINT tool for data aggregation relying on various other sites
 
+Intended to raise awareness of the vast amount of personal and aggregatable data available online on most people. 
+
 To run, do the following:
 
 1. Install Meteor JS
