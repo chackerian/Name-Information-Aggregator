@@ -14,7 +14,7 @@ var fs = require('fs');
 // console.log(process.argv.pop())
 
 
-var url="https://pipl.com/search/?q=liz+laverty&l=&sloc=&in=6"
+var url="https://pipl.com/search/?q=Tucker+Carlson&l=&sloc=&in=6"
 page.open(url, function() {
 
 	console.log(page.evaluate(function() {
