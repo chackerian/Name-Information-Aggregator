@@ -1,0 +1,145 @@
+/* CSS declarations go here */
+
+// Palette // 
+
+// Primary
+$grey: #333333;
+$teal: cadetblue;
+$launchred: red;
+
+// Cred-level
+$level-1: #e3e3e3;
+$level-2: #bc4033;
+$level-3: #bcb733;
+$level-4: #33bc50;
+$level-5: #3377bc;
+$white:rgb(255,255,255);
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+}
+
+.search {
+	font-size: 2em;
+}
+
+.remove {
+  background-color: darkgrey;
+  float: right;
+}
+
+.historyEntry{
+  display: inline-block;
+  float: left;
+  &:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+}
+
+.again {
+  width: 100px;
+  margin-left: 80%;
+  color: white;
+  background-color: orange;
+}
+
+.identityBox {
+  background-color: cadetblue;
+  width: 9em;
+  height: 9em;
+  display: inline-block;
+  float: left;
+  margin: 2em;
+  border-radius: 1em;
+  box-shadow: $grey 2px 2px; 
+
+  &:hover {
+    background-color: #73b2b4;
+  }
+
+  .identityPercentage{
+    text-align: center;
+    color:white;
+  }
+
+  i {
+    font-size: 5em;
+    margin: 0.1em 0.5em 0.5em 0.5em;
+    color: $grey;
+  }
+}
+
+h2 {
+  font-family: monospace;
+  width: 32%;
+  margin-left: 2%;
+}
+
+.white{
+    color: white;
+}
+
+.center{
+  text-align: center;
+}
+
+// Sections
+.topSection{
+	margin: 2em 15em 3em 15em;
+}
+
+.bottomSection{
+  // margin: 2em 15em 15em 15em;
+  background: #333333;
+}
+
+.informationSection{ 
+}
+
+.contentExpand{
+  height: 700px;
+}
+
+.sub-heading{
+  float: left;
+  font-size: 1em;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.md-primary{
+	background-color: red !important;
+}
+
+.loading {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 3em;
+  margin-left: 46%;
+  border: 1em solid rgba($white, 0.2);
+  border-top-color: $white;
+  animation: spinner 5s infinite linear
+}
+
+// Grid
+.col-6 {
+  width: 50%;
+}
+
+.col-6:nth-child(1){
+  float: left;
+}
+
+.col-6:nth-child(2){
+  float: right;
+}

@@ -1,0 +1,71 @@
+<div class="page">
+  <h1 class="heading"> Name Information Aggregator</h1>
+  <login-buttons ng-hide="isUser"></login-buttons>
+  <div ng-controller="SearchCtrl as ctrl" layout="column" ng-cloak>
+    <div class="topSection">
+      <div>
+        <md-content class="md-padding">
+          <form ng-submit="$event.preventDefault()" name="searchForm">
+            <div layout-gt-sm="row">
+              <md-input-container flex md-search-text="ctr.selectedItem">
+                <label>Name</label>
+                <input class="search" type="text" ng-model="querys" placeholder="Full Name" />
+              </md-input-container>
+            </div>
+          </form>
+        </md-content>
+      </div>
+
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+        <md-button class="md-raised md-primary search-button" ng-click="search(querys)">Search</md-button>
+      </section>
+    </div>
+    <saved-search ng-hide="isUser"></saved-search>
+
+    <div class="bottomSection" ng-hide="hidestatus">
+      <div class="loading"></div>
+      <h2 class="white">{{master.searches[current]}}</h2>
+      <div ng-class="{'contentExpand': expandedBool}"> 
+
+        <div ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12] track by $index">
+          <a ng-click="scrollInfo()">
+            <div class="identityBox">
+
+              <span class="identityPercentage">
+               <!--  23% -->
+             </span>
+             <br/>
+             <i class="zmdi zmdi-account-box">
+             </i>
+             <span class="white">{{n}}</span>    
+           </div>
+         </a>
+       </div>
+       <div>
+       <h2 class="white">{{matches}} potential matches found</h2>
+       </div>
+     </div>
+   </div>
+
+   <div class="informationSection" id="info" ng-hide="hidestatus">
+    <h1>Info:</h1>
+
+    <div class="row">
+
+      <div class="col-6">
+
+        <h2>Age:</h2> {{result.age}}
+      </div>
+
+      <div class="col-6">
+
+        <h2 class="ancestry">Ancestry:</h2> {{result.ancestry}}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</div>

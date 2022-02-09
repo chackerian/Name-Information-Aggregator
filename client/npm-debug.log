@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'should',
+1 verbose cli   'bower_components' ]
+2 info using npm@2.14.22
+3 info using node@v0.10.43
+4 verbose install initial load of /Users/rex/Desktop/JavaFinal/java/package.json
+5 verbose installManyTop reading scoped package data from /Users/rex/Desktop/JavaFinal/java/node_modules/angular/package.json
+6 verbose installManyTop reading scoped package data from /Users/rex/Desktop/JavaFinal/java/node_modules/angular-messages/package.json
+7 verbose installManyTop reading scoped package data from /Users/rex/Desktop/JavaFinal/java/node_modules/angular-meteor/package.json
+8 verbose installManyTop reading scoped package data from /Users/rex/Desktop/JavaFinal/java/node_modules/meteor-node-stubs/package.json
+9 info package.json angular-meteor@1.3.10 No repository field.
+10 verbose readDependencies loading dependencies from /Users/rex/Desktop/JavaFinal/java/package.json
+11 silly cache add args [ 'should', null ]
+12 verbose cache add spec should
+13 silly cache add args [ 'bower_components', null ]
+14 verbose cache add spec bower_components
+15 silly cache add parsed spec { raw: 'should',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'should',
+15 silly cache add   rawSpec: '',
+15 silly cache add   spec: 'latest',
+15 silly cache add   type: 'tag' }
+16 silly addNamed should@latest
+17 verbose addNamed "latest" is being treated as a dist-tag for should
+18 info addNameTag [ 'should', 'latest' ]
+19 silly mapToRegistry name should
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/should
+23 verbose addNameTag registry:https://registry.npmjs.org/should not in flight; fetching
+24 silly cache add parsed spec { raw: 'bower_components',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'bower_components',
+24 silly cache add   rawSpec: '',
+24 silly cache add   spec: 'latest',
+24 silly cache add   type: 'tag' }
+25 silly addNamed bower_components@latest
+26 verbose addNamed "latest" is being treated as a dist-tag for bower_components
+27 info addNameTag [ 'bower_components', 'latest' ]
+28 silly mapToRegistry name bower_components
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/bower_components
+32 verbose addNameTag registry:https://registry.npmjs.org/bower_components not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/bower_components
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 10:26:54
+36 verbose request id 61d46b50bb91b1ca
+37 http request GET https://registry.npmjs.org/bower_components
+38 verbose get https://registry.npmjs.org/should not expired, no request
+39 silly addNameTag next cb for should with tag latest
+40 silly addNamed should@8.3.1
+41 verbose addNamed "8.3.1" is a plain semver version for should
+42 silly cache afterAdd should@8.3.1
+43 verbose afterAdd /Users/rex/.npm/should/8.3.1/package/package.json not in flight; writing
+44 verbose correctMkdir /Users/rex/.npm correctMkdir not in flight; initializing
+45 verbose afterAdd /Users/rex/.npm/should/8.3.1/package/package.json written
+46 http 404 https://registry.npmjs.org/bower_components
+47 verbose headers { 'content-type': 'application/json',
+47 verbose headers   'cache-control': 'max-age=0',
+47 verbose headers   'content-length': '2',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   date: 'Thu, 05 May 2016 14:26:55 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   age: '0',
+47 verbose headers   connection: 'keep-alive',
+47 verbose headers   'x-served-by': 'cache-atl6246-ATL',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1462458414.917516,VS0,VE336',
+47 verbose headers   vary: 'Accept-Encoding' }
+48 silly get cb [ 404,
+48 silly get   { 'content-type': 'application/json',
+48 silly get     'cache-control': 'max-age=0',
+48 silly get     'content-length': '2',
+48 silly get     'accept-ranges': 'bytes',
+48 silly get     date: 'Thu, 05 May 2016 14:26:55 GMT',
+48 silly get     via: '1.1 varnish',
+48 silly get     age: '0',
+48 silly get     connection: 'keep-alive',
+48 silly get     'x-served-by': 'cache-atl6246-ATL',
+48 silly get     'x-cache': 'MISS',
+48 silly get     'x-cache-hits': '0',
+48 silly get     'x-timer': 'S1462458414.917516,VS0,VE336',
+48 silly get     vary: 'Accept-Encoding' } ]
+49 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/bower_components
+49 verbose stack     at makeError (/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+49 verbose stack     at CachingRegistryClient.<anonymous> (/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+49 verbose stack     at Request._callback (/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+49 verbose stack     at Request.self.callback (/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/request/request.js:199:22)
+49 verbose stack     at Request.emit (events.js:98:17)
+49 verbose stack     at Request.<anonymous> (/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+49 verbose stack     at Request.emit (events.js:117:20)
+49 verbose stack     at IncomingMessage.<anonymous> (/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/request/request.js:963:12)
+49 verbose stack     at IncomingMessage.emit (events.js:117:20)
+49 verbose stack     at _stream_readable.js:944:16
+50 verbose statusCode 404
+51 verbose pkgid bower_components
+52 verbose cwd /Users/rex/Desktop/JavaFinal/java/client
+53 error Darwin 15.3.0
+54 error argv "node" "/Users/rex/.meteor/packages/meteor-tool/.1.3.2_4.lbyo5v++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "should" "bower_components"
+55 error node v0.10.43
+56 error npm  v2.14.22
+57 error code E404
+58 error 404 Registry returned 404 for GET on https://registry.npmjs.org/bower_components
+58 error 404
+58 error 404 'bower_components' is not in the npm registry.
+58 error 404 You should bug the author to publish it (or use the name yourself!)
+58 error 404 It was specified as a dependency of 'java'
+58 error 404
+58 error 404 Note that you can also install from a
+58 error 404 tarball, folder, http url, or git url.
+59 verbose exit [ 1, true ]

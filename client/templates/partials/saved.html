@@ -1,0 +1,7 @@
+<div ng-repeat="search in searches | orderBy:'name' " class="historyEntry" ng-click="search2($index)">
+{{search.name}},
+</div>
+<br/>
+    <md-button class="remove md-raised" ng-click="removeDB()">
+  Empty DB
+    </md-button>

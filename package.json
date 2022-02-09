@@ -1,0 +1,17 @@
+{
+  "name": "java",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-meteor": "^1.3.10",
+    "angular-modules": "^1.0.0",
+    "meteor-node-stubs": "^0.2.3",
+    "phantom": "^2.1.1",
+    "phantomjs": "^2.1.7",
+    "webpage": "^0.3.0",
+    "yql": "^1.0.2"
+  }
+}

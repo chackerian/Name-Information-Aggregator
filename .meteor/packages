@@ -1,0 +1,39 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+reactive-var            # Reactive variable for tracker
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifier-css   # CSS minifier run for production mode
+standard-minifier-js    # JS minifier run for production mode
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+
+angular-templates
+pbastowski:angular-babel
+angular:angular-material
+fourseven:scss
+markdown
+divramod:angular-markdown-directive
+gadicohen:phantomjs
+accounts-password
+dotansimha:accounts-ui-angular
+accounts-base
+angular-meteor-auth
+ixdi:material-design-iconic-font
+anonyfox:scrape
+http
+rclai89:cheerio
+autopublish
+sanjo:jasmine
+insecure
+meteorhacks:npm
+
+
+npm-container
